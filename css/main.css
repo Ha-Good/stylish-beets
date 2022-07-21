@@ -12,7 +12,7 @@ img {
 
 h1, h2 {
   color: #3f1622;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -22,7 +22,7 @@ body {
 
 nav > ol {
   color: #8f2440;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -35,37 +35,68 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #8f2440;
+  text-decoration: none;
+}
+
 figcaption {
-  font-family: 'PT Serif', serif;
+  font-family: "Pt Serif", serif;
   font-style: oblique;
   color: #222;
   text-align: center;
   font-size: 1.125rem;
+  font-weight: lighter;
 }
 
-p:time {
-  font-family: 'PT Serif', serif;
+p > time {
+  font-family: "Pt Serif", serif;
   color: #222;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 p {
-  font-family: 'PT-Serif', serif;
+  font-family: PT-Serif, serif;
   color: #222;
   font-size: 1.125rem;
+  font-weight: normal;
 }
 
 blockquote {
-  font-family: 'PT Serif', serif;
+  font-family: "Pt Serif", serif;
   font-style: italic;
   font-size: 1.5rem;
   color: #222;
 }
 
-cite:not(Jim-Halpert) {
-  font-family: 'PT Serif', serif;
+cite {
+  font-family: "PT Serif", serif;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: .8rem;
   color: #222;
-  list-style-type: none;
+  font-weight: lighter;
+}
+
+ol {
+  list-style-type: lower-greek;
+  color: #222;
+}
+
+p [data] {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+}
+
+dt {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  color: #222;
+}
+
+ul {
+  font-family: "PT Serif", serif;
+  font-size: .8rem;
+  list-style-type: circle;
+  color: #222;
 }
