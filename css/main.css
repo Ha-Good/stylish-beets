@@ -1,33 +1,23 @@
 html {
   box-sizing: border-box;
+  background-color: #c9b5ab;
+  color: #222;
+  font-family: "PT Serif", serif;
+  line-height: 1.5;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 img {
   width: 100%;
-}
-
-h1, h2 {
-  color: #3f1622;
-  font-family: "PT Sans", sans-serif;
-  font-size: 1.5rem;
-}
-
-body {
-  background-color: #c9b5ab;
-}
-
-nav > ol {
-  color: #8f2440;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 a {
@@ -36,67 +26,70 @@ a {
 }
 
 a:hover {
+  color: #3f1622;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #3f1622;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+nav {
   color: #8f2440;
-  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+nav ol {
+  list-style-type: none;
+}
+
+figure {
+  text-align: center;
 }
 
 figcaption {
-  font-family: "Pt Serif", serif;
-  font-style: oblique;
-  color: #222;
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: lighter;
+  font-style: italic;
 }
 
-p > time {
-  font-family: "Pt Serif", serif;
-  color: #222;
+main figure + p {
   font-weight: bold;
-  font-size: 1.5rem;
-}
-
-p {
-  font-family: PT-Serif, serif;
-  color: #222;
   font-size: 1.125rem;
-  font-weight: normal;
 }
 
 blockquote {
-  font-family: "Pt Serif", serif;
-  font-style: italic;
-  font-size: 1.5rem;
-  color: #222;
-}
-
-cite {
-  font-family: "PT Serif", serif;
-  font-style: italic;
   font-size: .8rem;
-  color: #222;
-  font-weight: lighter;
 }
 
-ol {
-  list-style-type: lower-greek;
-  color: #222;
-}
-
-p [data] {
-  font-family: "PT Serif", serif;
+blockquote p {
+  font-size: 1.5rem;
   font-style: italic;
+}
+
+blockquote strong {
+  font-weight: normal;
+}
+
+.serving {
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+.varieties {
+  list-style-type: lower-greek;
 }
 
 dt {
-  font-family: "PT Serif", serif;
   font-weight: bold;
-  color: #222;
 }
 
 ul {
-  font-family: "PT Serif", serif;
   font-size: .8rem;
   list-style-type: circle;
-  color: #222;
 }
